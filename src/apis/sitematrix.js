@@ -54,7 +54,21 @@ const siteIsSelectable = (site) => {
 const projectFamilies = matrix.then(matrixData => {
     return _.transform(matrixData.sitematrix, (projectFamilyAcc, languageGroup, key) => {
         if (key !== 'count' && key !== 'specials') {
-            languageGroup.site.forEach(site => {
+            let sitesToProcess = languageGroup.site;
+
+            // Same as in languages (see below)
+            if (sitesToProcess.length === 0 && languageGroup.localname) {
+                const fallbackGroup = _.find(matrixData.sitematrix, (g, k) => {
+                    return k !== 'count' && k !== 'specials' &&
+                                 g.localname === languageGroup.localname && 
+                                 g.site && g.site.length > 0;
+                });
+                if (fallbackGroup) {
+                    sitesToProcess = fallbackGroup.site;
+                }
+            }
+
+            sitesToProcess.forEach(site => {
                 if (siteIsSelectable(site)) {
                     const languageCode = languageCodeFix[languageGroup.code] || languageGroup.code;
                     const siteCode = site.code === 'wiki' ? 'wikipedia' : site.code;
@@ -127,7 +141,21 @@ const projectFamilies = matrix.then(matrixData => {
 const languages = matrix.then(matrixData => {
     return _.transform(matrixData.sitematrix, (languageAcc, languageGroup, key) => {
         if (key !== 'count' && key !== 'specials') {
-            const validSites = languageGroup.site.filter(siteIsSelectable);
+            let validSites = languageGroup.site.filter(siteIsSelectable);
+
+            // sometime around summer 2026, some of the language variants
+            // were re-organized in the sitematrix, this attempts to adapt them:
+            if (validSites.length === 0 && languageGroup.localname) {
+                const fallbackGroup = _.find(matrixData.sitematrix, (g, k) => {
+                     return k !== 'count' && k !== 'specials' && 
+                                    g.localname === languageGroup.localname && 
+                                    g.site && g.site.length > 0;
+                });
+                if (fallbackGroup) {
+                    validSites = fallbackGroup.site.filter(siteIsSelectable);
+                }
+            }
+
             if (validSites.length > 0) {
                 const languageCode = languageCodeFix[languageGroup.code] || languageGroup.code;
                 const name = _.capitalize(languageGroup.name);
