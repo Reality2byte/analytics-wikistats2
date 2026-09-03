@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"باران",
 			"شاه زمان پټان"
 		]
 	},
@@ -209,6 +210,6 @@
 	"time_range-3-month": "وروستۍ ۳ میاشتې",
 	"time_range-last-month": "تېره مياشت",
 	"time_range-all": "ټول وخت",
-	"tooltip-help-permalink": "تلپاتې وېبتړ",
+	"tooltip-help-permalink": "تلپاتې تړونی",
 	"tooltip-help-copy": "ټينگدړې ته لمېسل"
 }
