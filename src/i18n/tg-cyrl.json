@@ -202,8 +202,10 @@
 	"charts-line": "график",
 	"charts-map": "харита",
 	"charts-table": "ҷадвал",
+	"charts-table-load_more_rows": "Боркунии сатрҳои бештар...",
 	"granularities-daily": "ҳаррӯза",
 	"granularities-monthly": "ҳармоҳа",
+	"metrics_matrix-all_metrics": "Ҳамаи метрикаҳои Викиомор",
 	"footer-documentation": "Ҳуҷҷатгузорӣ",
 	"footer-about_wikistats": "Дар бораи Викиомор",
 	"footer-technology": "Фановарӣ",
@@ -221,5 +223,6 @@
 	"time_range-3-month": "Дар 3 моҳи гузашта",
 	"time_range-last-month": "Дар моҳи гузашта",
 	"time_range-all": "Ҳама вақт",
+	"status_overlay-loading": "Дар ҳоли боргирии метрика...",
 	"status_overlay-general_error": "Чизе хато шуд"
 }
