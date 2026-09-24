@@ -31,7 +31,10 @@
 	"metrics-legacy-page-views-breakdowns-access-site-values-mobile-site-name": "Asmel aziraz",
 	"metrics-legacy-page-views-breakdowns-access-site-values-desktop-site-name": "Asmel n tnarit",
 	"metrics-page-views-by-country-name": "Isebtar yettwaẓran s tmurt",
+	"metrics-page-views-by-country-description": "Timura anda i yettwazra aṭas akk usenfar-a. Timura yellan deg umuɣ n uḥraz-nneɣ neɣ s ddaw n 100 temmuɣli ur ttwaḥsaben ara, u banent-d d tilmawin deg tkarḍa.",
 	"metrics-page-views-by-country-subtitle": "Timura i yesɛan aṭas n tmeẓriwin",
+	"metrics-page-views-by-country-tooltip": "Tamuɣli n usebter d asuter n ugbur n usebter web. Timuɣliwin n isebtar deg isenfaren n Wikimedia d allus agejdan akk n usetṭel n ugbur ɣur-neɣ. Tabadna n tmuɣli n usebter tettḥawal ad teḥseb timuɣliwin n ugbur i d-yettwazen i yiseqdacen.",
+	"metrics-page-views-by-country-question": "S wansa i d-kkan ineṛzaf n usenfar-a?",
 	"metrics-page-views-by-country-breakdowns-access-name": "Tarrayt n wadduf",
 	"metrics-page-views-by-country-breakdowns-access-values-desktop-name": "Tanarit",
 	"metrics-page-views-by-country-breakdowns-access-values-mobile-app-name": "Asnas aziraz",
@@ -162,6 +165,7 @@
 	"metrics-top-mediarequests-breakdowns-media_type-values-document-name": "Asemli",
 	"metrics-top-mediarequests-breakdowns-media_type-values-other-name": "Wayeḍ",
 	"metrics-active-editors-by-country-name": "Imaẓragen urmiden s tmurt",
+	"metrics-active-editors-by-country-question": "Anti n tmura seg i d-kkan imaẓragen urmiden?",
 	"metrics-active-editors-by-country-breakdowns-activity-level-name": "Aswir n wurmud",
 	"metrics-active-editors-by-country-breakdowns-activity-level-values-5..99-edits-name": "5 ɣer 99 n teẓrigin",
 	"metrics-active-editors-by-country-breakdowns-activity-level-values-100..-edits-name": "100 n teẓrigin neɣ ugar",
@@ -201,5 +205,6 @@
 	"time_range-3-month": "3 wayyuren yezrin",
 	"time_range-last-month": "Ayyur yezrin",
 	"time_range-all": "Si tazwara",
+	"status_overlay-general_error": "Teḍra-d tuccḍa.",
 	"widget_header-subtitle_for_last_month": "{subtitle} i {lastMonthLabel}"
 }
